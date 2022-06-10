@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Card</title>
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+
+
+        <div class="card">
+
+            <div class="head">
+                <h1>Guitarras de colores</h1>
+
+            </div>
+
+
+            <img class="img1" src="https://cdn.shopify.com/s/files/1/0021/5787/1153/products/4993_1800x1800.jpg?v=1557150620" alt="">
+
+            <div class="cardtext">
+                <h3>¡Elige la tuya!</h3>
+
+                <select id="colorselector" onchange=" 
+                ">
+                <option value="black">Negra</option> 
+                <option value="red">Roja</option> 
+                <option value="blue">Azul</option>
+                <option value="brown">Natural</option>
+                </select>
+
+
+                <input id="cant1" type="number">
+
+                <div class="pricetag">
+                    <p>Precio (CLP) $:</p>
+                    <h3 id="price">500000</h3>
+                    <br>
+                </div>
+
+            </div>
+
+            <button class="btn" id="calculatetotal">Calcular total</button>
+
+        </div>
+
+        <div class="result">
+
+            <div class="finalitems">
+                <p>Cantidad: <span id="cant2"> </span> </p>
+            </div>
+
+            <div>
+                <p>Total a pagar: <span id="pricetopay"></span> </p>
+            </div>
+
+            <div class="colorselected">
+                <div>
+                    <p>Color:&nbsp&nbsp&nbsp&nbsp </p>
+                </div>
+                <div class="finalcolor">
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="assets/js/index.js">
+    </script>
+
+</body>
+
+</html>
