@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+$mainfont: 'Lato',
+sans-serif;
+$color1: grey;
+$color2: rgb(190,
+186,
+186);
+$color3:rgb(60,
+59,
+59);
+$color4:rgb(36,
+36,
+36);
+$color5:white;
+$color6:rgb(217,
+59,
+59);
+body {
+    font-family: $mainfont;
+    background-color: $color4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 98vh;
+}
+
+.container {
+    margin: 3%;
+    background-color: $color4;
+    font-family: $mainfont;
+    font-size: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: 90vh;
+    align-items: center;
+    gap: 5%;
+    .card {
+        display: flex;
+        width: 80%;
+        height: 80vh;
+        background-color: $color1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 3%;
+        color: $color5;
+        border-radius: 5%;
+        .img1 {
+            width: 60%;
+            padding: 5%;
+            border-radius: 15%;
+        }
+        .cardtext {
+            height: 50%;
+            width: 60%;
+            color: $color5;
+            display: flex;
+            flex-direction: column;
+            gap: 5%;
+            .selector {
+                height: 100%;
+                border-radius: 5%;
+            }
+        }
+    }
+    .btn {
+        background-color: $color6;
+        border-color: $color6;
+        color: $color5;
+        width: 60%;
+        border-radius: 5%;
+        padding: 3%;
+        &:hover {
+            background-color: rgb(148, 45, 45);
+            border-color: rgb(148, 45, 45);
+        }
+    }
+    .result {
+        @extend .card;
+        width: 40%;
+        height: 50%;
+        font-size: 110%;
+        .finalitems {
+            text-align: left;
+            align-items: flex-start;
+            display: flex;
+            flex-direction: row;
+        }
+        .colorselected {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .finalcolor {
+            width: 25px;
+            height: 25px;
+            background-color: rgb(254, 14, 14);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    }
+}

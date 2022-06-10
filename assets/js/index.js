@@ -1,0 +1,48 @@
+let inputquantity = document.getElementById("cant1");
+let price = document.getElementById("price").textContent;
+let calculate = document.getElementById("calculatetotal");
+let totalquantity = 0;
+let finalprice = 0;
+let pricetopay = document.getElementById("pricetopay");
+let colorpicker = document.querySelector("#colorselector");
+
+inputquantity.addEventListener("change", (event) => {
+    totalquantity = event.target.value;
+    console.log(event.target.value);
+
+})
+
+calculate.addEventListener("click", () => {
+    finalprice = totalquantity * Number(price);
+    pricetopay.textContent = finalprice;
+    inputquantity = document.querySelector('#cant1');
+    selectedguitars = document.querySelector('#cant2');
+    selectedguitars.innerHTML = inputquantity.value + ' guitarra(s)';
+
+    function changeBackground() {
+        let colorpicker = document.querySelector("#colorselector").value;
+        document.querySelector("#finalcolor").style.backgroundColor = colordisplay;
+    }
+    console.log(finalprice);
+})
+
+
+
+/*
+    inputquantity.addEventListener("click", (event) => {
+        inputquantity = document.querySelector('#cant1');
+        selectedguitars = document.querySelector('#cant2');
+        selectedguitars.innerHTML = inputquantity.value + ' guitarra(s)';
+
+    })
+    
+
+colorpicker.addEventListener("change", (event) => {
+    colorpicker = document.querySelector('#colorselector');
+    colordisplay = document.querySelector('#finalcolor');
+    colordisplay.style.backgroundColor = element.value
+
+
+})
+
+*/
