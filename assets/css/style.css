@@ -134,10 +134,6 @@ body {
           box-shadow: inset 250px 0 0 0 green;
   color: white;
   border-color: green;
-  /*
-            background-color: $color7;
-            border-color: $color7;
-            */
 }
 
 .container .result {

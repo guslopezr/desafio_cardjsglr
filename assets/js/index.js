@@ -25,26 +25,3 @@ function changeColor(event) {
     var color = event.value;
     document.getElementsByClassName('finalcolor')[0].style.backgroundColor = color;
 }
-
-
-
-
-
-/*
-    inputquantity.addEventListener("click", (event) => {
-        inputquantity = document.querySelector('#cant1');
-        selectedguitars = document.querySelector('#cant2');
-        selectedguitars.innerHTML = inputquantity.value + ' guitarra(s)';
-
-    })
-    
-
-colorpicker.addEventListener("change", (event) => {
-    colorpicker = document.querySelector('#colorselector');
-    colordisplay = document.querySelector('#finalcolor');
-    colordisplay.style.backgroundColor = element.value
-
-
-})
-
-*/
