@@ -1,156 +1,174 @@
-    @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-    $mainfont: 'Lato',
-    sans-serif;
-    $color1: rgb(195,
-    195,
-    195);
-    $color2: rgb(228,
-    227,
-    227);
-    $color3:rgb(60,
-    59,
-    59);
-    $color4:rgb(56,
-    56,
-    56);
-    $color5:white;
-    $color6:rgb(217,
-    59,
-    59);
-    $color7:green;
-    $color8:rgb(0,
-    0,
-    0);
-    body {
-        font-family: $mainfont;
-        background-color: $color5;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 98vh;
-    }
-    
-    .container {
-        margin: 3%;
-        background-color: $color5;
-        font-family: $mainfont;
-        font-size: 90%;
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 70%;
-        height: 90vh;
-        align-items: center;
-        gap: 5%;
-        .card {
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        $mainfont: 'Lato',
+        sans-serif;
+        $color1: rgb(195,
+        195,
+        195);
+        $color2: rgb(228,
+        227,
+        227);
+        $color3:rgb(60,
+        59,
+        59);
+        $color4:rgb(56,
+        56,
+        56);
+        $color5:white;
+        $color6:rgb(217,
+        59,
+        59);
+        $color7:green;
+        $color8:rgb(0,
+        0,
+        0);
+        body {
+            font-family: $mainfont;
+            background-color: $color5;
             display: flex;
-            width: 80%;
-            height: 80vh;
-            background-color: $color1;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            padding: 3%;
+            height: 98vh;
+        }
+        
+        .container {
             margin: 3%;
-            color: $color4;
-            border-radius: 5%;
-            gap: 0%;
-            .img1 {
-                width: 60%;
-                padding: 5%;
-                border-radius: 15%;
-                transition: transform .2s;
-                &:hover {
-                    transform: scale(1.1);
-                    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-                }
-            }
-            .cardtext {
-                height: 50%;
-                width: 60%;
-                color: $color4;
+            background-color: $color5;
+            font-family: $mainfont;
+            font-size: 90%;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 70%;
+            height: 90vh;
+            align-items: center;
+            gap: 5%;
+            .card {
                 display: flex;
+                width: 80%;
+                height: 80vh;
+                background-color: $color1;
                 flex-direction: column;
-                gap: 5%;
-                .selector {
-                    height: 100%;
+                align-items: center;
+                justify-content: center;
+                padding: 3%;
+                margin: 3%;
+                color: $color4;
+                border-radius: 5%;
+                gap: 0%;
+                .img1 {
+                    width: 60%;
+                    padding: 5%;
+                    border-radius: 15%;
+                    transition: transform .2s;
+                    &:hover {
+                        transform: scale(1.1);
+                        /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+                    }
+                }
+                .cardtext {
+                    height: 50%;
+                    width: 60%;
+                    color: $color4;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5%;
+                    .selector {
+                        height: 100%;
+                        border-radius: 5%;
+                    }
+                }
+                .price {
+                    font-weight: 900;
+                    font-size: 150%;
+                }
+                .colorselector {
+                    height: 80%;
+                    border-radius: 5%;
+                }
+                .cant1 {
+                    height: 70%;
                     border-radius: 5%;
                 }
             }
-            #price {
+            .btn {
+                background-color: $color6;
+                border-color: $color6;
+                color: $color5;
+                width: 60%;
+                border-radius: 5%;
+                padding: 3%;
                 font-weight: 900;
-                font-size: 150%;
-            }
-            .colorselector {
-                height: 80%;
-                border-radius: 5%;
-            }
-            .cant1 {
-                height: 70%;
-                border-radius: 5%;
-            }
-        }
-        .btn {
-            background-color: $color6;
-            border-color: $color6;
-            color: $color5;
-            width: 60%;
-            border-radius: 5%;
-            padding: 3%;
-            font-weight: 900;
-            font-size: 120%;
-            transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-            &:hover {
-                box-shadow: inset 230px 0 0 0 $color7;
-                color: white;
-                border-color: $color7;
-                /*
+                font-size: 120%;
+                transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+                &:hover {
+                    box-shadow: inset 230px 0 0 0 $color7;
+                    color: white;
+                    border-color: $color7;
+                    /*
             background-color: $color7;
             border-color: $color7;
             */
+                }
+            }
+            .result {
+                @extend .card;
+                width: 60%;
+                height: 50%;
+                font-size: 120%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                font-weight: 900;
+                .pricetext {
+                    color: $color8;
+                    font-weight: bolder;
+                    font-size: 130%;
+                }
+            }
+            .colorselected {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            .finalcolor {
+                width: 25px;
+                height: 25px;
+                background-color: rgb(246, 241, 241);
+                border-radius: 50%;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
             }
         }
-        .result {
-            @extend .card;
-            width: 60%;
-            height: 50%;
-            font-size: 120%;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            font-weight: 900;
-            .pricetext {
-                color: $color8;
-                font-weight: bolder;
-                font-size: 130%;
+        
+        @media (min-width:200px) and (max-width:600px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                height: 90vh;
+                margin-top: 15vh;
+                margin-bottom: 10vh;
+                gap: 2vh;
+            }
+            .price {
+                font-weight: 900;
+                font-size: 90%;
+            }
+            .btn {
+                background-color: $color6;
+                border-color: $color6;
+                color: $color5;
+                width: 60%;
+                border-radius: 5%;
+                padding: 1%;
+                font-weight: 900;
+                font-size: 100%;
+                margin-bottom: 5%;
+            }
+            .head {
+                font-size: 80%;
             }
         }
-        .colorselected {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
-        .finalcolor {
-            width: 25px;
-            height: 25px;
-            background-color: rgb(246, 241, 241);
-            border-radius: 50%;
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-        }
-    }
-    
-    @media (min-width:200px) and (max-width:600px) {
-        .container {
-            display: flex;
-            flex-direction: column;
-            width: 90%;
-            height: 90vh;
-            margin-top: 15vh;
-            margin-bottom: 10vh;
-            gap: 2vh;
-        }
-    }

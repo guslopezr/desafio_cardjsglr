@@ -99,7 +99,7 @@ body {
   border-radius: 5%;
 }
 
-.container .card #price, .container .result #price {
+.container .card .price, .container .result .price {
   font-weight: 900;
   font-size: 150%;
 }
@@ -207,6 +207,24 @@ body {
     margin-top: 15vh;
     margin-bottom: 10vh;
     gap: 2vh;
+  }
+  .price {
+    font-weight: 900;
+    font-size: 90%;
+  }
+  .btn {
+    background-color: #d93b3b;
+    border-color: #d93b3b;
+    color: white;
+    width: 60%;
+    border-radius: 5%;
+    padding: 1%;
+    font-weight: 900;
+    font-size: 100%;
+    margin-bottom: 5%;
+  }
+  .head {
+    font-size: 80%;
   }
 }
 /*# sourceMappingURL=style.css.map */
