@@ -19,12 +19,14 @@ calculate.addEventListener("click", () => {
     selectedguitars = document.querySelector('#cant2');
     selectedguitars.innerHTML = inputquantity.value + ' guitarra(s)';
 
-    function changeBackground() {
-        let colorpicker = document.querySelector("#colorselector").value;
-        document.querySelector("#finalcolor").style.backgroundColor = colordisplay;
-    }
-    console.log(finalprice);
 })
+
+function changeColor(event) {
+    var color = event.value;
+    document.getElementsByClassName('finalcolor')[0].style.backgroundColor = color;
+}
+
+
 
 
 

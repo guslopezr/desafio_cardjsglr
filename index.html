@@ -30,16 +30,15 @@
             <div class="cardtext">
                 <h3>¡Elige la tuya!</h3>
 
-                <select id="colorselector" onchange=" 
-                ">
-                <option value="black">Negra</option> 
-                <option value="red">Roja</option> 
-                <option value="blue">Azul</option>
-                <option value="brown">Natural</option>
-                </select>
+                <select class="colorselector" id="colorselector" onchange="changeColor(this)">
+                        <option value="black">Selecciona color</option>
+                        <option value="black">Negra</option>
+                        <option value="red">Roja</option>
+                        <option value="blue">Azul</option>
+                        <option value="#8B4513">Natural</option>
+                    </select>
 
-
-                <input id="cant1" type="number">
+                <input class="cant1" id="cant1" type="number">
 
                 <div class="pricetag">
                     <p>Precio (CLP) $:</p>
@@ -56,16 +55,16 @@
         <div class="result">
 
             <div class="finalitems">
-                <p>Cantidad: <span id="cant2"> </span> </p>
+                <p class="cant2">Cantidad: <span id="cant2"> </span> </p>
             </div>
 
             <div>
-                <p>Total a pagar: <span id="pricetopay"></span> </p>
+                <p class="pricetext">Total a pagar: <span id="pricetopay"></span> </p>
             </div>
 
             <div class="colorselected">
                 <div>
-                    <p>Color:&nbsp&nbsp&nbsp&nbsp </p>
+                    <p>Color Guitarra(s):&nbsp&nbsp&nbsp&nbsp </p>
                 </div>
                 <div class="finalcolor">
 
