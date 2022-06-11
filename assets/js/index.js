@@ -1,3 +1,5 @@
+/*variables*/
+
 let inputquantity = document.getElementById("cant1");
 let price = document.getElementById("price").textContent;
 let calculate = document.getElementById("calculatetotal");
@@ -6,11 +8,14 @@ let finalprice = 0;
 let pricetopay = document.getElementById("pricetopay");
 let colorpicker = document.querySelector("#colorselector");
 
+
 inputquantity.addEventListener("change", (event) => {
     totalquantity = event.target.value;
     console.log(event.target.value);
 
 })
+
+/*botón*/
 
 calculate.addEventListener("click", () => {
     finalprice = totalquantity * Number(price);
@@ -20,6 +25,9 @@ calculate.addEventListener("click", () => {
     selectedguitars.innerHTML = inputquantity.value + ' guitarra(s)';
 
 })
+
+/*función para cambiar colores*/
+
 
 function changeColor(event) {
     var color = event.value;
